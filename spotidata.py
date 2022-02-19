@@ -56,7 +56,7 @@ if cmd == True:
     print(fg.cyan + data['length'] + fg.rs)
     print(fg.green + data['label'] + fg.rs)
     print(fg.blue + data['image'] + fg.rs)
-    input('press enter/return to open image in browser')s
+    input('press enter/return to open image in browser')
     print('opening image in browser')
     webbrowser.open(data['image'])
 
