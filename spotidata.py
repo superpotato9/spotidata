@@ -1,3 +1,4 @@
+cmd = True
 import lyr
 import os
 from urllib.request import unquote
@@ -47,17 +48,17 @@ data = {'title':title, 'artist': artist, 'lyrics':lyrics, 'released':released, '
 
 
 
-            
-print( fg.green + data['title']  + fg.rs)
-print( fg.blue + data['artist']  + fg.rs)
-print(bg.magenta + data['lyrics']  + bg.rs)
-print(fg.yellow + data['released'] + fg.rs)
-print(fg.cyan + data['length'] + fg.rs)
-print(fg.green + data['label'] + fg.rs)
-print(fg.blue + data['image'] + fg.rs)
-input('press enter/return to open image in browser')s
-print('opening image in browser')
-webbrowser.open(data['image'])
+if cmd == True:           
+    print( fg.green + data['title']  + fg.rs)
+    print( fg.blue + data['artist']  + fg.rs)
+    print(bg.magenta + data['lyrics']  + bg.rs)
+    print(fg.yellow + data['released'] + fg.rs)
+    print(fg.cyan + data['length'] + fg.rs)
+    print(fg.green + data['label'] + fg.rs)
+    print(fg.blue + data['image'] + fg.rs)
+    input('press enter/return to open image in browser')s
+    print('opening image in browser')
+    webbrowser.open(data['image'])
 
 
 
